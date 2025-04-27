@@ -24,7 +24,7 @@ Designed to showcase skills, projects, and contact information in a clean, profe
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/slater8242/riad-portfolio.git
+git clone https://github.com/slater8242/portfolio.git
 ```
 
 2. Install dependencies:
