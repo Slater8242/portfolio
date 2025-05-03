@@ -4,12 +4,6 @@ import { motion } from 'framer-motion'
 
 const projects = [
   {
-    title: 'Next.js Portfolio',
-    description: 'A minimal and responsive developer portfolio built with Next.js and Tailwind CSS.',
-    tech: ['Next.js', 'Tailwind', 'Framer Motion'],
-    link: '#',
-  },
-  {
     title: 'Finlo.lv',
     description: 'Fintech page with Nuxt 3 and Markdown support, styled with vanilla CSS.',
     tech: ['Nuxt 3', 'Vue', 'Markdown', 'CSS'],
@@ -28,7 +22,7 @@ export default function ProjectsSection() {
       >
         Projects
       </motion.h2>
-      <div className="grid gap-8 md:grid-cols-2">
+      <div className={`grid gap-8 ${projects.length===1? 'w-m':'md:grid-cols-2'}`}>
         {projects.map((project, index) => (
           <motion.a
             href={project.link}
